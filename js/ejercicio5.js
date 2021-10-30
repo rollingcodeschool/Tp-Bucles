@@ -12,8 +12,9 @@
 let resto = 0;
 let letra = "";
 do {
-    let numero = parseInt(prompt("Ingrese su dni"));
-    if (!isNaN(numero) && numero !=null) {
+    let numero = prompt("Ingrese su dni");
+    if (!isNaN(numero) && numero !=null) {  
+        numero= parseInt(numero);
         if (numero >= 0 && numero <= 99999999) {
             //obtener el resto de dividir el numero en 23
             resto = numero % 23;
@@ -90,9 +91,13 @@ do {
                     break;
                 default:
                     //si el numero no se encuentra entre 0 y 22
-                    alert("Numero erroneo");
-            }
+                    alert('Ingrese un numero valido');
+                }
+                alert("Numero: " + numero + ", Letra: " + letra);
+        }else{
+            alert('Ingrese un DNI valido');
         }
-        alert("Numero: " + numero + ", Letra: " + letra);
+    }else{
+        alert('Ingrese un numero valido');
     }
 } while(confirm('¿Desea continuar?'))

@@ -14,8 +14,9 @@ do {
   nota = parseInt(prompt("Ingresa una nota del 0 al 10"));
   console.log(nota);
   //verificar si la nota es un numero y ademas  esta entre 0 y 10
-  if (!isNaN(nota) && nota > 0 && nota <= 10) {
+  if (!isNaN(nota) && nota >= 0 && nota <= 10) {
     switch (nota) {
+      case 0:
       case 1:
       case 2:
         alert("Muy deficiente");
@@ -42,6 +43,8 @@ do {
         alert("Nota erronea");
         break;
     }
+  }else{
+    alert("Ingrese un numero valido");
   }
   //si no pulse cancelar el bucle se vuelve a repetir
 } while (confirm("¿Desea continuar?"));
