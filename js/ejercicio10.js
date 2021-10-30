@@ -11,8 +11,7 @@ for(let indiceFila=0; indiceFila < filas; indiceFila++){
     document.write('<tr>');
     // dibujar las celdas
     for(let indiceColumna=0; indiceColumna< columnas; indiceColumna++){
-        document.write('<td>'+total);
-         document.write('</td>');
+        document.write('<td>'+total+'</td>');
          total--; //total = total-1;
     }
     document.write('</tr>');

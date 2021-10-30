@@ -7,15 +7,14 @@ do {
 	numero = prompt('Ingresa un numero');
 	//pregunto si es un numero
 	console.log(numero);
-	if (!isNaN(numero) && numero !=null) {
+	if (!isNaN(parseInt(numero)) && numero !=null) {
 		//ej ingreso E isNan devuelve verdadero cuando lo que paso entre () no es un numero
 		//isNaN(E) -> respuesta !verdadero -> false
 		//isNaN(3) -> respuesta !falso -> verdadero
 		
 		//!true => false
-        //console.log(numero);
         suma = suma + parseInt(numero);
-        console.log(suma);
+        console.log('suma ' + suma);
 	} else {
 		//si presione aceptar sin poner un numero valido
 		if (numero != null) {
@@ -25,4 +24,4 @@ do {
 	//ejecutar mientras no presione cancelar
 } while (numero != null);
 
-document.write(suma);
+document.write('Total: '+ suma);
