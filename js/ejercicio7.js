@@ -10,7 +10,7 @@
 
 
 //solicitar un numero
-let numrep = parseInt(prompt("Ingresa un numero de repeticiones entre 1 y 50"));
+const numrep = parseInt(prompt("Ingresa un numero de repeticiones entre 1 y 50"));
 //verifico si es un numero
 if (!isNaN(numrep)) {
     //verifico si el numero esta entre 1 y 50
@@ -19,9 +19,9 @@ if (!isNaN(numrep)) {
         for (let i = numrep; i >= 1; i--) {
             //bucle interno desde i hasta 1
             for (let rep = i; rep >= 1; rep--) {
-                document.write(i);
+                document.writeln(i);
             }
-            document.write("<br>");
+            document.writeln("<br>");
         }
     } else {
         alert("El número introducido no es válido");

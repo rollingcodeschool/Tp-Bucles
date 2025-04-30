@@ -1,7 +1,6 @@
 // 15- Realiza un script que cuente el número de vocales que tiene un texto.
 
-let cadena = prompt("Ingrese una cadena de texto:");
-cadena = cadena.toUpperCase(); //Devuelve el string en mayúsculas.
+const cadena = prompt("Ingrese una cadena de texto:").toUpperCase();//Devuelve el string en mayúsculas.
 let caracter;
 let contador = 0;
 
@@ -17,4 +16,4 @@ for (let i = 0; i < cadena.length; i++) {
     contador++;
   }
 }
-document.write(`Número de Vocales: ${contador}`);
+document.writeln(`Número de Vocales: ${contador}`);

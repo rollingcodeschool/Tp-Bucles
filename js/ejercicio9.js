@@ -14,23 +14,22 @@
 // 10
 
 //crear variables
-let j = 500;
-let rep = 0;
+const j = 500;
 //bucle desde 1 hasta j=500
 for (let i = 1; i <= j; i++) {
-    document.write(i);
+    document.writeln(i);
     //si el resto de dividir i/4 es igual a 0
     if (i % 4 == 0) {
-        document.write(" (Multiplo de 4)");
+        document.writeln(" (Multiplo de 4)");
     }
     //si el resto de dividir i/9 es igual a 0
     if (i % 9 == 0) {
-        document.write(" (Multiplo de 9)");
+        document.writeln(" (Multiplo de 9)");
     }
     //agrego un salto de linea
-    document.write("<br>");
+    document.writeln("<br>");
     //si es multiplo de 5 imprimir linea
     if (i % 5 == 0) {
-        document.write("<hr>");
+        document.writeln("<hr>");
     }
 }

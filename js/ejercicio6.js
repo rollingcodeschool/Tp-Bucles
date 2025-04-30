@@ -14,7 +14,7 @@
       //bucle interno para hacer las repeticiones
       for (let rep = 0; rep < i; rep++) {
           //mostrar el numero i, rep veces
-          document.write(i);
+          document.writeln(i);
       }
-      document.write("<br>");
+      document.writeln("<br>");
   }

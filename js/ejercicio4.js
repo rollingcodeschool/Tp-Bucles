@@ -1,7 +1,7 @@
 // 4- Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
 
 let suma = 0;
-let numero = 0;
+const numero = 0;
 
 do {
 	numero = prompt('Ingresa un numero');
@@ -24,4 +24,4 @@ do {
 	//ejecutar mientras no presione cancelar
 } while (numero != null);
 
-document.write('Total: '+ suma);
+document.writeln('Total: '+ suma);

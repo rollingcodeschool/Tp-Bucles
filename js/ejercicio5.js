@@ -12,7 +12,7 @@
 let resto = 0;
 let letra = "";
 do {
-    let numero = prompt("Ingrese su dni");
+    const numero = prompt("Ingrese su dni");
     if (!isNaN(numero) && numero !=null) {  
         numero= parseInt(numero);
         if (numero >= 0 && numero <= 99999999) {
